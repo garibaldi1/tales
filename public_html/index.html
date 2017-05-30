@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/gettales.js"></script>
     </head>
     <body>
         <header>
@@ -26,15 +27,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-main">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Народные сказки</a></li>
-                        <li><a href="#">Писатели сказочники</a></li>
-                        <li><a href="#">Рассказы</a></li>
-                        <li><a href="#">Стихи для детей</a></li>
-                        <li><a href="#">Басни</a></li>
-                        <li><a href="#">Мифы</a></li>
-                        <li><a href="#">Аудио для детей</a></li>
+                        <li id="1"><a href="#" onclick="gettales();">Народные сказки</a></li>
+                        <li id="2"><a href="#">Писатели сказочники</a></li>
+                        <li id="3"><a href="#">Рассказы</a></li>
+                        <li id="4"><a href="#">Стихи для детей</a></li>
+                        <li id="5"><a href="#">Басни</a></li>
+                        <li id="6"><a href="#">Мифы</a></li>
+                        <li id="7"><a href="#">Аудио для детей</a></li>
                     </ul>
-                    <form class="navbar-form navbar-left" role="search">
+                    <form class="navbar-form navbar-left" role="search" method="get">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Поиск сказок">
                         </div>
@@ -66,7 +67,7 @@
                                 <th>П/п</th>
                                 <th>Картинка(маленькая)</th>
                                 <th>Наименование</th>
-                                <th>Длинна</th>
+                                <th>Автор</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -74,7 +75,7 @@
                                 <td>1</td>
                                 <td>картинка</td>
                                 <td>Название сказки</td>
-                                <td>длинна трека</td>
+                                <td>Автор</td>
                             </tr>
                         </tbody>
                     </table>
