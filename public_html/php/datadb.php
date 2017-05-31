@@ -8,6 +8,6 @@ while ($tales = mysqli_fetch_array($select_tales)){
     $name = $tales['name'];
     $author = $tales['author'];
     $ganre = $tales['ganre'];
-    echo "<tr><td>$id</td><tr>$name</tr><tr>$author</tr><tr>$ganre</tr></tr>";
+    echo "<tr><td>$id</td><td>$name</td><td>$author</td><td>$ganre</td></tr>";
 };
 ?>
