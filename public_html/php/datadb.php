@@ -1,11 +1,13 @@
 <?php
+header('Content-type: text/html; charset=utf-8');
 require_once ("talesdb.php");
-$query = "SELECT*FROM tales";
+$query = "SELECT*FROM tales where ganre='tales'";
 $select_tales = mysqli_query($link, $query);
 while ($tales = mysqli_fetch_array($select_tales)){
-    echo $tales['id'],"<br>";
-    echo $tales['name'],"<br>";
-    echo $tales['author'],"<br>";
-    echo $tales['ganre'],"<br>";
+    $id = $tales['id'];
+    $name = $tales['name'];
+    $author = $tales['author'];
+    $ganre = $tales['ganre'];
+    echo "<tr><td>$id</td><tr>$name</tr><tr>$author</tr><tr>$ganre</tr></tr>";
 };
 ?>
