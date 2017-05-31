@@ -3,7 +3,7 @@ function gettales(){
 $.ajax({
     type:"post",
     url:"php/datadb.php",
-    succes: function(data){
+    success: function(data){
          $("#result").html(data);
     }
 });
